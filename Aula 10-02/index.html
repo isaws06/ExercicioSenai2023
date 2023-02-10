@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //Questão 1 
+        let a = 10, b = 20 
+        let c = a * b
+        let d = a + b + c
+        let media = (a+b+c+d)/4
+        console.log('Questão 1\nA = '+a+'\nB = '+b+'\nC + '+c+'\nD = '+ d + '\nMédia: '+media);
+
+//Questão 2
+let salario = 3000, reajuste, novoSalario, indiceReajustado
+        if (salario <= 2000){
+            reajuste = salario * 0.15
+            indiceReajustado = 15
+        }       
+        else if (salario <= 4000){
+            reajuste = salario * 0.12
+            indiceReajustado = 12 
+        }   
+        else{
+            reajuste = salario * 0.10
+            indiceReajustado = 10
+        }
+novoSalario = salario + reajuste
+        console.log('Questão 2\nNovo Salário: R$'+novoSalario +'\nValor Reajustado: R$'+reajuste +'\nÍndice Reajustado:'+indiceReajustado+'%')
+
+        // Questão 3 
+
+        let base = 50, minicurso = 's', traducao = 's'
+
+        if(minicurso == 's')
+            base += 20
+        if(traducao == 's')
+            base += 10
+
+        console.log('Questão 3\nValor da Inscrição: R$'+base)
+        
+        // Questão 4 
+
+        let sexo, filme, contMulheres = 0, contFilmes = 0
+        for(i=0; i<50; i++){
+            sexo = Math.floor(Math.random() * 2)
+            filme = Math.floor(Math.random() * 23)
+            
+            if(sexo == 1)//1 - feminino
+                contMulheres++
+            if(filme > 10)
+                contFilmes++
+        }
+percMulheres = contMulheres*100/50
+        
+        console.log('Questão 4\nQtd de mulheres: ' + contMulheres +'\nQtd de pessoas assistiram mais que 10 filmes: ' +contFilmes +'\nPercentual de mulheres: '+percMulheres+'%')
+        
+    // Questão 5 
+    let nota1 = [7.0,7.0,5.5,6.0,6.0,7.0,9.0,6.8,6.5,6.0]
+        let nota2 = [7.5,8.0,6.0,6.0,6.5,6.0,8.0,7.2,7.5,8.0]
+        let medias = []
+        let contConceitoA = 0, somaMedias = 0
+        for(i=0; i<10; i++){
+            medias[i] = (nota1[i]+nota2[i])/2
+
+            if(medias[i] > 9) contConceitoA++
+            
+            somaMedias+= medias[i]            
+        }
+        let mediaGeral = somaMedias/medias.length
+        console.log('Questão 5\nQuantidade de alunos conceito A:'+contConceitoA
+        +'\nMédia geral da turma:'+mediaGeral)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
