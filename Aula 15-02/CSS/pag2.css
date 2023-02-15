@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;1,100;1,300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Helvetica;
+    font-family: 'Poppins', sans-serif;
     color: #323232;
     border: none;
 }
@@ -47,72 +49,17 @@ h4{
     padding: 1%;
     margin-top: 1vh;
 }
-a{
-    font-size: .8rem;
-}
 
-a:hover{
-    color: #5f49af;
-}
 
 /* container-login */
 #login-container{
     background-color: #fff;
-    width: 1000px;
+    width: 1150px;
     margin-left: auto;
     margin-right: auto;
     padding: 30px 30px;
-    margin-top: 11vh;
+    margin-top: 2vh;
     border-radius: 10px;
     text-align: center;
 
 }
-
-/* formulario */
-form{
-    margin-top: 30px;
-    margin-bottom: 40px;
-}
-
-label, input{
-    display: grid;
-    width: 100%;
-    justify-content: center;
-}
-
-label{
-    font-weight: bold;
-}
-
-input{
-    border-bottom: 2px solid #323232;
-    padding: 0rem;
-    font-size: 1rem;
-    margin-bottom: 20px;
-    place-content: center;
-}
-
-input:focus{
-    border-bottom: 2px solid #352769;
-}
-
-
-input[type="submit"]{
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    border: none;
-    height: 45px;
-    border-radius: 20px;
-    margin-top: 30px;
-    color: #fff;
-    background-color: #4f3f8a;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover{
-background-color: #7764bb;
-transition: .5s;
-}
-
-
