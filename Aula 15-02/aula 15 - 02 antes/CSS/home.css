@@ -1,0 +1,108 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #323232;
+    border: none;
+}
+
+body{
+    background-image: url(../img/fundo.jpg);
+    background-size: cover;
+    /* background-position-y: -200px ; */
+}
+.img{
+    text-align: center;
+    
+    
+}
+.nav {
+    --bs-nav-link-padding-x: 1rem;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: #fff;
+    --bs-nav-link-hover-color: #e968ee;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    background-color: #352769;
+    color: #fff;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+
+a{
+    font-size: .8rem;
+}
+
+a:hover{
+    color: #5f49af;
+}
+
+/* container-login */
+#login-container{
+    background-color: #fff;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+    margin-top: 5vh;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+/* formulario */
+form{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+label, input{
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+label{
+    font-weight: bold;
+}
+
+input{
+    border-bottom: 2px solid #323232;
+    padding: 0rem;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+input:focus{
+    border-bottom: 2px solid #352769;
+}
+
+#esqueceu-senha{
+    text-align: right;
+    display: block;
+}
+
+input[type="submit"]{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 45px;
+    border-radius: 20px;
+    margin-top: 30px;
+    color: #fff;
+    background-color: #4f3f8a;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+background-color: #7764bb;
+transition: .5s;
+}
