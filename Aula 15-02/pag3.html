@@ -20,29 +20,47 @@
           <a class="nav-link" href="pag2.html">O que é?</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="pag3.html">Principais tipos</a>
+          <a class="nav-link" href="pag3.html">Calculadora</a>
         </li>
       </ul>
 
-    <div id="login-container">
-      <h1>Quais são os principais tipos de investimentos financeiros? </h1>
-      <h4>
-        1. Investimentos financeiros em Renda Fixa
-Primeiramente, os investimentos financeiros podem ser do tipo Renda Fixa, isto é, com uma remuneração determinada previamente em contrato ao realizar o investimento. Então, o investidor já sabe, quando realiza a aplicação, quanto vai receber ao final do prazo combinado. 
-Assim sendo, esses ativos financeiros estabelecem uma relação contratual entre o investidor e uma instituição para o direito de receber o valor da aplicação inicial mais a remuneração pela taxa de juros do investimento ao final do período.      
-</h4>
-      <h4>
-        2. Investimentos financeiros em Renda Variável
-Ademais, os investimentos financeiros também podem ser de renda variável. Em outros termos, seu valor se altera todos os dias, conforme os mais investidores queiram comprar ou vender tais ativos.
-Portanto, como dissemos, nesses ativos financeiros a cotação se altera conforme as leis da oferta e da procura e, por isso, são chamados de renda variável. Contudo, também podem ser recomendados para todos os tipos de investidores, de acordo com o seu apetite pelo risco.      
-</h4>
-      <form action="home.html">
-        <input type="submit" value="voltar para o menu">
-        
-      </form>
+      
+      <main id="container">
+        <div id="calculator">
+            <h2>
+                Calculadora de Juros Compostos
+            </h2>
 
+            <div id="input_box">
+                <div class="input-field">
+                    <label for="value">Valor Inicial (capital):</label>
+                    <input type="number" id="value">
+                </div>
 
-      </div>
-    </div>
+                <div class="input-field">
+                    <label for="fee">Taxa de Juros a.m:</label>
+                    <input type="number" id="fee">
+                </div>
+
+                <div class="input-field">
+                    <label for="time">Tempo de Rendimento a.m:</label>
+                    <input type="number" id="time">
+                </div>
+            </div>
+
+            <div id="result">
+                <h4>Resultado:</h4>
+                <span id="total">
+                    R$ 0,00
+                </span>
+            </div>
+
+            <button id="calculate">
+                Calcular
+            </button>
+        </div>
+    </main>
+
+ <script type="text/javascript" src="./JS/script.js"></script>
 </body>
 </html>
