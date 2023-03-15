@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+<script>
+
+
+    class Product {
+        constructor(name, price) {
+            this.name = name,
+            this.price = price
+        }
+        priceTag(){
+            return 'O nome do produto é ' + this.name + ' e custa ' + this.price + ' reais'
+        }
+    }
+
+
+    class ImportedProduct extends Product {
+        constructor(name, price, customsFee){
+            super(name, price)
+            this.customsFee = customsFee
+        }
+        totalPrice(){
+            return 'O nome do produto é ' + this.name + ', custa ' + this.price + ' e sua taxa aduaneira é de ' + this.customsFee + ' reais'
+    }
+}
+
+
+    class UsedProduct extends Product {
+        constructor(name, price, manufactureDate){
+            super(name, price)
+            this.manufactureDate = manufactureDate
+        }
+        priceTag(){
+        return 'O nome do produto é ' + this.name + ', custa ' + this.price + ' reais e foi fabricado na data: ' + this.manufactureDate
+    }
+}
+
+
+let tablet = new ImportedProduct('Tablet', 260, 20)
+tablet.priceTag()
+tablet.totalPrice()
+
+
+let notebook = new Product('Notebook', 1100)
+notebook.priceTag
+
+
+let iphone = new UsedProduct('Iphone', 400, '01/01/2019')
+iphone.priceTag()
+
+
+</script>
+
+
+</body>
+</html>
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+class Animal{
+    constructor(nome, cor, ambiente, comprimento, velocidade,
+patas){
+    this.nome = nome
+    this.cor = cor
+    this.ambiente = ambiente
+    this.comprimento = comprimento
+    this.velocidade = velocidade
+    this.patas = patas
+    
+}
+
+AlterarNome(novoNome) {
+    this.nome = novoNome;
+  }
+
+  AlterarComprimento(novoComprimento) {
+    this.comprimento = novoComprimento;
+  }
+
+  AlterarPatas(novoNumeroDePatas) {
+    this.patas = novoNumeroDePatas;
+  }
+
+  AlterarCor(novaCor) {
+    this.cor = novaCor;
+  }
+
+  AlterarAmbiente(novoAmbiente) {
+    this.ambiente = novoAmbiente;
+  }
+
+  AlterarVelocidade(novaVelocidade) {
+    this.velocidade = novaVelocidade;
+  }
+
+  Dados() {
+    console.log(`Nome: ${this.nome}`);
+    console.log(`Espécie: ${this.especie}`);
+    console.log(`Comprimento: ${this.comprimento}`);
+    console.log(`Número de Patas: ${this.patas}`);
+    console.log(`Cor: ${this.cor}`);
+    console.log(`Ambiente: ${this.ambiente}`);
+    console.log(`Velocidade: ${this.velocidade}`);
+  }
+
+}
+
+class Peixe extends Animal {
+    constructor(ambiente, cor, caracteristica){
+    super(nuPatas, ambiente, cor)
+    this.caracteristica = caracteristica
+    this.ambiente = ambiente
+    this.cor = cor
+}
+AlterarCaracteristica(novaCaracteristica) {
+    this.caracteristica = novaCaracteristica;
+  }
+
+  Caracteristica() {
+    return this.caracteristica;
+  }
+
+  Dados() {
+    console.log(`Nome: ${this.nome}`);
+    console.log(`Característica: ${this.barbatana}`);
+    console.log(`Comprimento: ${this.comprimento}`);
+    console.log(`Velocidade: ${this.velocidade}`);
+  }
+}
+
+class Mamifero extends Animal{
+    constructor(nome, cor, alimento, comprimento, velocidade, patas, ambiente)
+    { super(ambiente)
+      this.nome = nome;
+      this.cor = cor;
+      this.alimento = alimento;
+      this.comprimento = comprimento;
+      this.velocidade = velocidade;
+      this.patas = patas;
+    }
+  
+    AlterarAlimento(novoAlimento) {
+      this.alimento = novoAlimento;
+    }
+  
+    Alimento() {
+      return this.alimento;
+    }
+  
+    Dados() {
+      console.log(`Nome: ${this.nome}`);
+      console.log(`Cor: ${this.cor}`);
+      console.log(`Alimento: ${this.alimento}`);
+      console.log(`Comprimento: ${this.comprimento}`);
+      console.log(`Velocidade: ${this.velocidade}`);
+      console.log(`Número de Patas: ${this.patas}`);
+    }
+  }
+
+
+
+    </script>
+</body>
+</html>
