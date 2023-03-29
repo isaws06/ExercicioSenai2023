@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+class Biblioteca {
+    constructor (livro, gibi){
+        this.livro = livro
+        this.gibi = gibi
+    }
+
+    Vendeu(){
+    console.log('O livro ' + this.livro + ' foi vendido');
+    }
+
+    Alugado(){
+        console.log('O gibi ' + this.gibi + ' foi alugado');
+    }
+
+    imprimirInfo1(){
+        console.log(this.livro + this.gibi);
+    }
+}
+
+class Cliente extends Biblioteca{
+    constructor(livros, gibi, revista){
+        super(livros, gibi, revista)
+        this.revista = revista
+    }
+
+    Ler(){
+        console.log('Ele leu o livro ' + this.livro);
+    }
+
+    Comprar(){
+        console.log('Ele comprou a  revista ' + this.revista);
+    }
+
+    Devolver(){
+        console.log('Ele devolveu o gibi do ' + this.gibi);
+    }
+
+    imprimirInfo2(){
+        console.log(this.livro + this.gibi + this.revista);
+    }
+}
+
+
+let bibliotecaIsa = new Biblioteca('Senhor dos Aneis', 'Turma da Mônica')
+console.log(bibliotecaIsa);
+
+let carlos = new Cliente('Harry Potter', 'Naruto', 'Vogue')
+console.log(carlos);
+
+</script>
+
+</body>
+</html>
